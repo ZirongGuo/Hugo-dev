@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tool Kit on ZirongGuo</title>
+        <link>http://localhost:1313/Hugo-dev/categories/tool-kit/</link>
+        <description>Recent content in Tool Kit on ZirongGuo</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>Example Person</copyright>
+        <lastBuildDate>Sun, 05 Apr 2026 12:47:19 +0800</lastBuildDate><atom:link href="http://localhost:1313/Hugo-dev/categories/tool-kit/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Set Up My Own Blog Using Github &#43; Hugo</title>
+        <link>http://localhost:1313/Hugo-dev/p/set-up-my-own-blog-using-github--hugo/</link>
+        <pubDate>Sun, 05 Apr 2026 12:47:19 +0800</pubDate>
+        
+        <guid>http://localhost:1313/Hugo-dev/p/set-up-my-own-blog-using-github--hugo/</guid>
+        <description>&lt;img src="http://localhost:1313/Hugo-dev/p/set-up-my-own-blog-using-github--hugo/background.png" alt="Featured image of post Set Up My Own Blog Using Github &#43; Hugo" /&gt;&lt;h1 id=&#34;0-introduction&#34;&gt;0. Introduction
+&lt;/h1&gt;&lt;p&gt;The tools we will used in this blog:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Github&lt;/strong&gt;, for generating public sites, hosting images&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hugo&lt;/strong&gt;, for gennerating static sites, applying blog themes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Picgo&lt;/strong&gt;, for uploading images&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VScode&lt;/strong&gt;, for editing blogs in markdown format&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VScode Extensions&lt;/strong&gt;, for improving creative experience&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Our approach to the construction is that we will learn how to set up a static site by &lt;strong&gt;Hugo&lt;/strong&gt; at first, and then upload some of the key documents to &lt;strong&gt;Github&lt;/strong&gt;.&lt;br&gt;
+Additionally, if you use a plain text editor, it will be quite challenging. So I will intersperse with explanations on how to use &lt;strong&gt;VScode + Picgo&lt;/strong&gt; to optimize your creative experience.&lt;/p&gt;
+&lt;h1 id=&#34;1-generate-a-static-site&#34;&gt;1. Generate a static site
+&lt;/h1&gt;&lt;p&gt;First, you should download Hugo.&lt;/p&gt;
+&lt;p&gt;Hugo download link: &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then, you should open the folder and excute the code below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405141602.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405141602&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Now you should acquire a theme in Hugo:&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo themes&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405142045.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405142045&#34;
+	
+	
+&gt;
+Copy them to &lt;code&gt;\dev&lt;/code&gt;:
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405142144.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405142144&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Excute the code below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405133353.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405133353&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;2-markdown-images-github--picgo&#34;&gt;2. Markdown images: Github + Picgo
+&lt;/h1&gt;&lt;p&gt;First, download Picgo: &lt;a class=&#34;link&#34; href=&#34;https://github.com/Molunerfinn/PicGo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Picgo releases&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You should create a Repository at Github.
+Then enter the configuration details.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405144001.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405144001&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405133442.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405133442&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3-markdown-creative-enviroment-integration-vscode-extensions&#34;&gt;3. Markdown Creative Enviroment Integration: VScode Extensions
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405133557.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405133557&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://cdn.jsdelivr.net/gh/ZirongGuo/Picgo@main/img/20260405133539.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;20260405133539&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Markdown All in One&lt;/strong&gt;: Offers features such as auto-completion and key shortcut support, like Ctrl + B (bold), Ctrl + I (italic), Ctrl + K (insert link). When writing blogs, frequently using headings, lists, quotations, code blocks, etc., manually typing symbols is inefficient. Using this plugin can significantly improve the writing fluency.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown Preview Enhanced&lt;/strong&gt;: What you see is what you get. It offers real-time preview and export capabilities. You can open the dual-column real-time preview by pressing Ctrl + K V (of course, you can also view the changes in real time using Hugo, simply by saving the file).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-upload-the-site-to-github&#34;&gt;4. Upload the site to Github
+&lt;/h1&gt;&lt;p&gt;To be continued.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
